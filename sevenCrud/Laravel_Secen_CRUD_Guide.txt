@@ -1,0 +1,39 @@
+
+Authentication in Laravel means Login + Registration System.
+
+To download Laravel Authentication:
+composer require laravel/ui:^2.4
+
+To install bootstrap for front-end:
+php artisan ui bootstrap
+
+To install bootstrap authentication (login form and other components)
+php artisan ui bootstrap --auth
+
+
+AFTER CHANGING SOMETHING INSIDE .env FILE, one time 'php artisan serve' has to be executed.
+
+
+
+By using compact() function, all data stored inside index function can be forwarded to the view. COMPACT FUNCTION:  it is used to create an array using variables. This function is opposite of extract() function. It creates an associative array whose keys are variable names and their corresponding values are array values.
+DURING THE USE OF COMPACT FUNCTION, INSIDE THE FUNCTION THERE WILL NOT BE VARIABLE SIGN '$' IN FRONT OF VARIABLES.
+
+
+
+
+**** diffForHumans() is a package of carbon. Its output looks like:
+							
+							'1 hour ago' 
+							'16 minutes ago'
+							'15 minutes ago'
+This is a useful function to log the creation time.
+
+
+During data retrievation from Database, if we need only one data, then first() function can be used. 
+
+
+Two ways to retrieve data from Database
+1. By using eloquent ORM.
+ORM = Object Relational Mapping.
+2. By using query builder.
+
